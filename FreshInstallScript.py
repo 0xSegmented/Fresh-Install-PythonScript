@@ -4,7 +4,7 @@ import platform
 import distro
 import os
 
-dis = distro.name()
+char.dis = distro.name()
 fed = ['Nobara', 'Fedora', 'Ultramarine', 'Risi', 'Qubes', 'Berry', 'ClearOS', 'FX64', 'Montana', 'Kedora', 'Dormant', 'Amahi', 'VortexBox']
 if dis in fed:
     print(f"{dis} spotted")
