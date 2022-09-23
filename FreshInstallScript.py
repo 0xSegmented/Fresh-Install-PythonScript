@@ -6,7 +6,7 @@ import os
 
 dis = distro.name()
 fed = ['Nobara', 'Fedora', 'Ultramarine', 'Risi', 'Qubes', 'Berry', 'ClearOS', 'FX64', 'Montana', 'Kedora', 'Dormant', 'Amahi', 'VortexBox']
-if fed in dis:
+if dis in fed:
     print(f"{dis} spotted")
     x = input("Ready to install? Press y :\n")
     if x == "y":
