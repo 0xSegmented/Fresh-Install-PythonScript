@@ -20,7 +20,9 @@ if "Nobara" in dis:
         print("This might take a while.")
         os.system('sudo dnf update')
         print("Installing Applications...")
-        os.system('sudo dnf install neovim htop vlc kdenlive filezilla ktorrent flameshot neofetch cargo git zsh')
+        os.system('sudo dnf install neovim htop vlc kdenlive filezilla ktorrent flameshot neofetch cargo git zsh util-linux-user')
+        print("Updating pip..")
+        os.system('sudo /usr/bin/python3 -m pip install --upgrade pip')
         print("Installing Lunarvim...")
         os.system('bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh) -y')
         print("Installing dotfiles...")
@@ -32,6 +34,14 @@ if "Nobara" in dis:
         shelltype = int(input("1- Ohmyzsh or 2- Ohmybash?\n"))
         if shelltype == 1:
             print("You chose Ohmyzsh.")
+            print("Installing ohmyzsh...")
+            os.system('sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"')
+            os.system('chsh -s $(which zsh)')
+            os.system('echo alias vi="lvim" >> ~/.zshrc')
+            os.system('echo alias vim="lvim" >> ~/.zshrc')
+            os.system('echo alias nvim="lvim" >> ~/.zshrc')
+            os.system('echo export PATH=/home/$USER/.local/bin:$PATH >> ~/.zshrc')
+            os.system('echo export PATH=/home/$USER/.cargo/bin:$PATH >> ~/.zshrc')
         elif shelltype == 2:
             print("You chose Ohmybash.")
         else:
