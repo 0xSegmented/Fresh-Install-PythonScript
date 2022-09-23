@@ -124,3 +124,11 @@ elif "Debian" in dis or "Ubuntu" in dis or "Mint" or "Deepin" in dis or "Pepperm
 else:
     print("Fault.")
 print("Done!, Thank you for using the script. - MaliciousXatt")
+print("""
+Add the following lines to your ~/.zshrc or ~/.bashrc
+alias vi="lvim"
+alias nvim="lvim"
+alias vim="lvim"
+export PATH=/home/(ENTER YOUR USERNAME)/.local/bin:$PATH
+export PATH=/home/(ENTER YOUR USERNAME)/.cargo/bin:$PATH
+""")
