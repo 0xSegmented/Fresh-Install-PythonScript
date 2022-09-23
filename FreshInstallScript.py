@@ -37,11 +37,6 @@ if "Nobara" in dis:
             print("Installing ohmyzsh...")
             os.system('sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"')
             os.system('chsh -s $(which zsh)')
-            os.system('echo alias vi="lvim" >> ~/.zshrc')
-            os.system('echo alias vim="lvim" >> ~/.zshrc')
-            os.system('echo alias nvim="lvim" >> ~/.zshrc')
-            os.system('echo export PATH=/home/$USER/.local/bin:$PATH >> ~/.zshrc')
-            os.system('echo export PATH=/home/$USER/.cargo/bin:$PATH >> ~/.zshrc')
         elif shelltype == 2:
             print("You chose Ohmybash.")
         else:
