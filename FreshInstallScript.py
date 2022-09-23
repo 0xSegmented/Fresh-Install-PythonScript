@@ -13,7 +13,7 @@ if "Nobara" in dis:
         time.sleep(0.5)
         print("Enabling fast-mirror and parralel downloads.")
         os.system('sudo rm -rf /etc/dnf/dnf.conf')
-        os.system('sudo curl -s https://cdn-116.anonfiles.com/ebd20b9cyd/7b21ce58-1663951185/dnf.conf /etc/dnf')
+        os.system('sudo curl -s https://download1512.mediafire.com/wt669mgu1zag/xiphnq5wu4y0m7v/dnf.conf /etc/dnf')
         print("Updating system...")
         time.sleep(0.2)
         print("This might take a while.")
