@@ -13,7 +13,7 @@ if "Nobara" in dis:
         time.sleep(0.5)
         print("Enabling fast-mirror and parralel downloads.")
         os.system('sudo rm -rf /etc/dnf/dnf.conf')
-        os.system('curl -s https://cdn-116.anonfiles.com/ebd20b9cyd/7b21ce58-1663951185/dnf.conf /etc/dnf')
+        os.system('sudo curl -s https://cdn-116.anonfiles.com/ebd20b9cyd/7b21ce58-1663951185/dnf.conf /etc/dnf')
         print("Updating system...")
         time.sleep(0.2)
         print("This might take a while.")
@@ -24,7 +24,8 @@ if "Nobara" in dis:
         os.system('bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh) -y')
         print("Installing dotfiles...")
         os.system('rm -rf ~/.config/lvim')
-        os.system('git clone https://github.com/MaliciousXatt/lvim.git ~/.config')
+        os.system('git clone https://github.com/MaliciousXatt/lvim.git')
+        os.system('mv lvim ~/.config')
         print("Done.")
     else:
         print("Fault2")
