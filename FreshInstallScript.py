@@ -29,6 +29,13 @@ if "Nobara" in dis:
         os.system('mv lvim ~/.config')
         print("Done.")
         time.sleep(0.5)
+        shelltype = int(input("1- Ohmyzsh or 2- Ohmybash?\n"))
+        if shelltype == 1:
+            print("You chose Ohmyzsh.")
+        elif shelltype == 2:
+            print("You chose Ohmybash.")
+        else:
+            print("Fault3")
     else:
         print("Fault2")
 else:
