@@ -9,7 +9,7 @@ if "Nobara" in dis or "Fedora" in dis or "Ultramarine" or "Risi" in dis or "Qube
     print(f"{dis} spotted")
     x = input("Ready to install? Press y :\n")
     if x == "y":
-        print("Installing....")
+        print("Installing.... Fedora-based")
         time.sleep(0.5)
         print("Enabling fast-mirror and parralel downloads.")
         os.system('sudo rm -rf /etc/dnf/dnf.conf')
@@ -50,7 +50,7 @@ elif "Arch" in dis or "Artix" in dis or "Manjaro" or "Endeavour" in dis or "Chak
     print(f"{dis} spotted")
     x = input("Ready to install? Press y :\n")
     if x == "y":
-        print("Installing....")
+        print("Installing....Arch-Based")
         time.sleep(0.5)
         print("Updating system...")
         time.sleep(0.2)
@@ -88,7 +88,7 @@ elif "Debian" in dis or "Ubuntu" in dis or "Mint" in dis or "Deepin" in dis or "
     print(f"{dis} spotted")
     x = input("Ready to install? Press y :\n")
     if x == "y":
-        print("Installing....")
+        print("Installing....Debian-Based")
         time.sleep(0.5)
         print("Updating system...")
         time.sleep(0.2)
