@@ -5,7 +5,8 @@ import distro
 import os
 
 dis = distro.name()
-if "Nobara" in dis or "Fedora" in dis or "Ultramarine" or "Risi" in dis or "Qubes" in dis or "Berry" in dis or "ClearOS" in dis or "FX64" in dis or "Montana" in dis or "Kedora" in dis or "Dormant" in dis or "Amahi" in dis or "VortexBox" in dis:
+fed = ['Nobara', 'Fedora', 'Ultramarine', 'Risi', 'Qubes', 'Berry', 'ClearOS', 'FX64', 'Montana', 'Kedora', 'Dormant', 'Amahi', 'VortexBox']
+if fed in dis:
     print(f"{dis} spotted")
     x = input("Ready to install? Press y :\n")
     if x == "y":
