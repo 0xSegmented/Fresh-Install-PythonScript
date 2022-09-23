@@ -20,7 +20,7 @@ if "Nobara" in dis:
         print("This might take a while.")
         os.system('sudo dnf update')
         print("Installing Applications...")
-        os.system('sudo dnf install neovim htop vlc kdenlive filezilla ktorrent flameshot neofetch cargo git')
+        os.system('sudo dnf install neovim htop vlc kdenlive filezilla ktorrent flameshot neofetch cargo git zsh')
         print("Installing Lunarvim...")
         os.system('bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh) -y')
         print("Installing dotfiles...")
@@ -28,6 +28,7 @@ if "Nobara" in dis:
         os.system('git clone https://github.com/MaliciousXatt/lvim.git')
         os.system('mv lvim ~/.config')
         print("Done.")
+        time.sleep(0.5)
     else:
         print("Fault2")
 else:
