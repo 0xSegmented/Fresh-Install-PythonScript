@@ -84,7 +84,7 @@ elif "Arch" in dis or "Artix" in dis or "Manjaro" or "Endeavour" in dis or "Chak
             print("Fault3")
     else:
         print("Fault2")
-elif "Debian" in dis or "Ubuntu" in dis or "Mint" or "Deepin" in dis or "Peppermint" in dis or "Mx Linux" in dis or "AntiX" in dis or "PureOS" in dis or "Kali" in dis or "Parrot" in dis or "Devuan" in dis or "Knoppix" in dis or "AV Linux" in dis or "KDE Neon" in dis or "raspian" in dis or "Pop!_OS" in dis or "Tails" in dis:
+elif "Debian" in dis or "Ubuntu" in dis or "Mint" in dis or "Deepin" in dis or "Peppermint" in dis or "Mx Linux" in dis or "AntiX" in dis or "PureOS" in dis or "Kali" in dis or "Parrot" in dis or "Devuan" in dis or "Knoppix" in dis or "AV Linux" in dis or "KDE Neon" in dis or "raspian" in dis or "Pop!_OS" in dis or "Tails" in dis:
     print(f"{dis} spotted")
     x = input("Ready to install? Press y :\n")
     if x == "y":
