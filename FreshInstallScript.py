@@ -5,8 +5,7 @@ import distro
 import os
 
 dis = distro.name()
-fed = ['Nobara', 'Fedora', 'Ultramarine', 'Risi', 'Qubes', 'Berry', 'ClearOS', 'FX64', 'Montana', 'Kedora', 'Dormant', 'Amahi', 'VortexBox']
-if dis in fed:
+if "Nobara" in dis or "Fedora" in dis or "Ultramarine" in dis or "Risi" in dis or "Qubes" in dis or "Berry" in dis or "ClearOS" in dis or "FX64" in dis or "Montana" in dis or "Kedora" in dis or "Dormant" in dis or "Amahi" in dis or "VortexBox" in dis:
     print(f"{dis} spotted")
     x = input("Ready to install? Press y :\n")
     if x == "y":
@@ -47,7 +46,7 @@ if dis in fed:
             print("Fault3")
     else:
         print("Fault2")
-elif "Arch" in dis or "Artix" in dis or "Manjaro" or "Endeavour" in dis or "Chakra" in dis or "Arco" in dis or "Parabola" in dis or "Garuda" in dis or "RebornOS" in dis or "Asahi" in dis or "SteamOS" in dis or "Ark" in dis or "LinHES" in dis:
+elif "Arch" in dis or "Artix" in dis or "Manjaro" in dis or "Endeavour" in dis or "Chakra" in dis or "Arco" in dis or "Parabola" in dis or "Garuda" in dis or "RebornOS" in dis or "Asahi" in dis or "SteamOS" in dis or "Ark" in dis or "LinHES" in dis:
     print(f"{dis} spotted")
     x = input("Ready to install? Press y :\n")
     if x == "y":
